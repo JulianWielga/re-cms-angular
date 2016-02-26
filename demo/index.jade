@@ -12,39 +12,44 @@ html
 		script(src='demo.js')
 
 	body(ng-app='demo')
-		re:cms(section='main:step1')
-		div re:cms(section='main:step1')
 
-		re:cms(section='main/step1')
-		div re:cms(section='main/step1')
+		re:cms(section='{{page}}:{{section}}')
 
-		re-cms(section='main:step2')
-		div re-cms(section='main:step2')
+		input(ng-model='page')
+		input(ng-model='section')
 
-		re_cms(section='main:step3')
-		div re_cms(section='main:step3')
-
-		div(re:cms, section='main:step4')
-		div div(re:cms, section='main:step4')
-
-		div(re:cms='main:step5')
-		div div(re:cms='main:step5')
-
-		div(re-cms='main:step6')
-		div div(re-cms='main:step6')
-
-		div(re_cms='main:step7')
-		div div(re_cms='main:step7')
-
-		div(class="re-cms: main:step8")
-		div div(class="re-cms: main:step8")
-
-		div(class="re_cms: main:step9")
-		div div(class="re_cms: main:step9")
-
-
-		h1 {{ 'main:step10' | reCms }}
-		h1(ng-bind-html="'main:step11' | reCms")
-		h1 {{ ('main/step11' | reCms) }}
-		h2 {{ ('main' | reCms) }}
-		h3 {{ ('step12' | reCms : 'main') }}
+		//div re:cms(section='main:step1')
+		//
+		//re:cms(section='main/step1')
+		//div re:cms(section='main/step1')
+		//
+		//re-cms(section='main:step2')
+		//div re-cms(section='main:step2')
+		//
+		//re_cms(section='main:step3')
+		//div re_cms(section='main:step3')
+		//
+		//div(re:cms, section='main:step4')
+		//div div(re:cms, section='main:step4')
+		//
+		//div(re:cms='main:step5')
+		//div div(re:cms='main:step5')
+		//
+		//div(re-cms='main:step6')
+		//div div(re-cms='main:step6')
+		//
+		//div(re_cms='main:step7')
+		//div div(re_cms='main:step7')
+		//
+		//div(class="re-cms: main:step8")
+		//div div(class="re-cms: main:step8")
+		//
+		//div(class="re_cms: main:step9")
+		//div div(class="re_cms: main:step9")
+		//
+		//
+		//h1 {{ 'main:step10' | reCms }}
+		//h1(ng-bind-html="'main:step11' | reCms")
+		//h1 {{ ('main/step11' | reCms) }}
+		//h2 {{ ('main' | reCms) }}
+		//h3 {{ ('step12' | reCms : 'main') }}

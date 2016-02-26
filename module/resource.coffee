@@ -3,6 +3,6 @@
 module.exports = [
 	'$resource'
 	($resource) ->
-		config = contentUrl: "http://demo7800115.mockable.io"
+		config = contentUrl: "http://localhost:8080"
 		$resource "#{config.contentUrl}/content/:page/"
 ]
