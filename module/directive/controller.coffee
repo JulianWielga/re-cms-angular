@@ -15,7 +15,6 @@ module.exports = class ReCmsContentController
 
 	parsePath: (expr) =>
 		[@page, @section] = @$cache.parsePath expr
-		console.log [@page, @section]
 
 	setClass: =>
 		@class = @section or @page

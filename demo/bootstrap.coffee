@@ -14,5 +14,4 @@ module.exports = angular.module 'demo', [
 #			templateUrl: "#{config.host}/app.html"
 #]
 
-.run ->
-	console.log 'demo'
+.run ['$rcVersion', ($rcVersion) -> console.log $rcVersion]
