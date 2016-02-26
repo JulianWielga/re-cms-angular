@@ -1,0 +1,31 @@
+{
+  "name": "re-cms",
+  "description": "re-cms",
+  "main": [
+    "dist/module.js",
+    "dist/module.css"
+  ],
+  "authors": [
+    "Julian Wielga <j@touk.pl>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "cms"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": ">= 1.5 < 1.6",
+    "angular-resource": ">= 1.5 < 1.6",
+    "angular-sanitize": ">= 1.5 < 1.6"
+  },
+  "devDependencies": {
+    "angular-ui-router": ">= 0.2 < 0.3"
+  },
+  "version": "0.0.1"
+}
