@@ -14,4 +14,10 @@ module.exports = angular.module 'demo', [
 #			templateUrl: "#{config.host}/app.html"
 #]
 
-.run ['$rcVersion', ($rcVersion) -> console.log $rcVersion]
+.run ['$rcVersion', ($rcVersion) ->
+	console.log $rcVersion
+]
+
+.config ['$rcResourceProvider', ($rcResourceProvider) ->
+	$rcResourceProvider.setContentUrl '//xxx'
+]

@@ -18,9 +18,10 @@
   },
   "main": "module/module.coffee",
   "dependencies": {
-    "coffee-script": ">= 1.10 < 2.0"
+    "lodash": ">= 4.5 < 5.0"
   },
   "devDependencies": {
+    "coffee-script": ">= 1.10 < 2.0",
     "assetsmanager-brunch": ">= 1.8 < 1.9",
     "bower": ">= 1.7 < 1.8",
     "auto-reload-brunch": ">= 2.0 < 2.1",

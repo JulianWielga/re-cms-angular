@@ -1,8 +1,15 @@
 'use strict'
 
-module.exports = [
-	'$resource'
-	($resource) ->
-		config = contentUrl: "http://localhost:8080"
-		$resource "#{config.contentUrl}/content/:page/"
-]
+module.exports = class RCResourceProvider
+
+	constructor: ->
+		@setContentUrl()
+
+	setContentUrl: (@contentUrl = '') -> return
+
+	$get: [
+		'$resource'
+		($resource) ->
+			$resource "#{@contentUrl}/:page"
+	]
+

@@ -9,7 +9,6 @@ module.exports = angular.module 're:cms', [
 
 .constant '$rcVersion', require('../package.json').version
 .directive directive.name, -> directive
-.factory '$rcResource', require './resource'
+.provider '$rcResource', require './resource'
 .service '$rcCache', require './cache'
 .filter 'reCms', require './filter'
-
