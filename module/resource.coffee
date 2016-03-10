@@ -10,6 +10,6 @@ module.exports = class RCResourceProvider
 	$get: [
 		'$resource'
 		($resource) ->
-			$resource "#{@contentUrl}/:page"
+			$resource "#{@contentUrl}/:page/:section"
 	]
 

@@ -18,6 +18,7 @@
   },
   "main": "module/module.coffee",
   "dependencies": {
+    "jsonformatter": ">= 0.5 < 1.0",
     "lodash": ">= 4.5 < 5.0"
   },
   "devDependencies": {

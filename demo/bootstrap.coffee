@@ -19,5 +19,16 @@ module.exports = angular.module 'demo', [
 ]
 
 .config ['$rcResourceProvider', ($rcResourceProvider) ->
-	$rcResourceProvider.setContentUrl '//xxx'
+	$rcResourceProvider.setContentUrl 'http://cmscontent.getsandbox.com/content'
 ]
+
+.controller 'Post', class Page
+
+	@$inject: []
+	constructor: () ->
+
+#	save: (page, section) =>
+#		@$resource.save
+#			page: page
+#			section: section
+#		, @markdown

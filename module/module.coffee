@@ -5,6 +5,8 @@ directive = require './directive'
 module.exports = angular.module 're:cms', [
 	'ngResource'
 	'ngSanitize'
+
+	require 'jsonformatter'
 ]
 
 .constant '$rcVersion', require('../package.json').version

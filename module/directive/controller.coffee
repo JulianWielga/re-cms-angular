@@ -29,3 +29,13 @@ module.exports = class ReCmsContentController
 	getContent: =>
 		if @content?.length
 			@$interpolate(@content)(@$scope)
+
+	editableContentOptions:
+		getterSetter: yes
+
+	editableContent: (value) =>
+		unless value?
+			return angular.toJson @content
+
+		@content = angular.fromJson value
+		@html = @getContent()

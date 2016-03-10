@@ -45,6 +45,9 @@ exports.config =
 				doctype: "html"
 			htmlmin: false
 
+		stylus:
+			includeCss: yes
+
 	notifications: ['log','info','warn','error','success']
 
 	server:
